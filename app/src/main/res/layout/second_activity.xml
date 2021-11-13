@@ -4,7 +4,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/yellow"
+    android:background="@color/yellow2"
     android:orientation="vertical"
     tools:context=".SecondActivity">
 
@@ -14,19 +14,22 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:ems="10"
-        android:hint="Write anything here"
-        android:textColorHint="@color/red1"
+        android:hint="Your feedback here.."
         android:inputType="textPersonName"
+        android:layout_margin="10dp"
         android:textColor="@android:color/holo_red_dark" />
 
     <RadioButton
         android:id="@+id/radioButton1"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:layout_margin="10dp"
         android:textColor="@color/red1"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:text="Subscribe Newsletter" />
+        android:onClick="radio_button_click"
+        android:text="Subscribe Newsletter"
+        tools:ignore="OnClick" />
 
     <CheckBox
         android:id="@+id/checkBox1"
@@ -35,6 +38,8 @@
         android:textStyle="bold"
         android:textSize="20sp"
         android:textColor="@color/red1"
+        android:layout_margin="10dp"
+        android:onClick="check_box_click"
         android:text="Interested in products and services" />
 
     <Button
@@ -45,5 +50,7 @@
         android:textColor="@color/red1"
         android:textStyle="bold"
         android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:onClick="buttonFunction"
         android:text="Submit" />
 </LinearLayout>
